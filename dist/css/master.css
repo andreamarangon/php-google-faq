@@ -1,8 +1,10 @@
 * {
-  padding: 0;
-  margin: 0;
   border: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 /* UTILITY */
@@ -116,4 +118,9 @@
 
 header h1 {
   color: pink;
+}
+
+main .container_main {
+  width: 50%;
+  margin: 0 auto;
 }

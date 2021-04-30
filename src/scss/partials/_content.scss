@@ -1,0 +1,5 @@
+main {
+  .container_main {
+    @include container-center(50%)
+  }
+}
