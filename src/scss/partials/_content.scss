@@ -1,6 +1,6 @@
 main {
   .container-main {
-    padding-top: 180px;
+    padding-top: 125px;
     @include container-center(50%);
     font-size: 14px;
     color: #000000de;
@@ -8,6 +8,29 @@ main {
       color: #3c4043;
       font-size: 24px;
       font-weight: 500;
+      padding-top: 64px;
+    }
+    p {
+      margin-bottom: 10px;
+      line-height: 24px;
+      padding-top: 20px;
+      span {
+        color: $secondary;
+        cursor: pointer;
+      }
+    }
+    ol {
+      margin-left: 14px;
+
+      li {
+        ol {
+          margin-left: 14px;
+          list-style-type: lower-latin;
+          li {
+
+          }
+        }
+      }
     }
   }
 

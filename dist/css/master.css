@@ -121,7 +121,7 @@ body {
 nav {
   color: #5f6368;
   background-color: #fff;
-  border-bottom: 1px solid #5f6368;
+  border-bottom: 1px solid lightgray;
   position: fixed;
   z-index: 10;
   top: 0;
@@ -150,8 +150,9 @@ nav .nav-top .nav-top-right {
   align-items: center;
 }
 nav .nav-top .nav-top-right .logo-user {
-  height: 35px;
-  width: 35px;
+  margin-right: 10px;
+  height: 32px;
+  width: 32px;
   background-color: red;
   border-radius: 50%;
   margin-left: 20px;
@@ -178,7 +179,7 @@ nav .nav-down ul li a {
 }
 
 main .container-main {
-  padding-top: 180px;
+  padding-top: 125px;
   width: 50%;
   margin: 0 auto;
   font-size: 14px;
@@ -188,9 +189,26 @@ main .container-main h2 {
   color: #3c4043;
   font-size: 24px;
   font-weight: 500;
+  padding-top: 64px;
 }
-
+main .container-main p {
+  margin-bottom: 10px;
+  line-height: 24px;
+  padding-top: 20px;
+}
+main .container-main p span {
+  color: #3367d6;
+  cursor: pointer;
+}
+main .container-main ol {
+  margin-left: 14px;
+}
+main .container-main ol li ol {
+  margin-left: 14px;
+  list-style-type: lower-latin;
+}
 footer {
+  margin-top: 50px;
   height: 45px;
   background-color: #F5F5F5;
 }
@@ -217,4 +235,5 @@ footer .footer-container .footer-right i {
 footer .footer-container .footer-right select {
   width: 176px;
   border: 1px solid #000;
+  margin: 0 5px;
 }
