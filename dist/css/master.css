@@ -1,4 +1,6 @@
 * {
+  padding: 0;
+  margin: 0;
   border: 0;
   box-sizing: border-box;
 }
@@ -116,11 +118,103 @@ body {
   font-style: italic;
 }
 
-header h1 {
-  color: pink;
+nav {
+  color: #5f6368;
+  background-color: #fff;
+  border-bottom: 1px solid #5f6368;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+nav .nav-top {
+  margin: 7px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-top .nav-top-left {
+  display: flex;
+  align-items: center;
+}
+nav .nav-top .nav-top-left h1 {
+  font-weight: normal;
+  font-size: 21px;
+}
+nav .nav-top .nav-top-left .logo-google img {
+  width: 70px;
+  margin: 9px 5px 0 0;
+}
+nav .nav-top .nav-top-right {
+  display: flex;
+  align-items: center;
+}
+nav .nav-top .nav-top-right .logo-user {
+  height: 35px;
+  width: 35px;
+  background-color: red;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+nav .nav-down {
+  margin: 0 20px;
+}
+nav .nav-down ul li {
+  display: inline-block;
+  margin-right: 30px;
+  font-weight: 500;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+nav .nav-down ul li.target {
+  border-bottom: 3px solid #3367d6;
+}
+nav .nav-down ul li.target a {
+  color: #3367d6;
+}
+nav .nav-down ul li a {
+  text-decoration: none;
+  color: #5f6368;
 }
 
-main .container_main {
+main .container-main {
+  padding-top: 180px;
   width: 50%;
   margin: 0 auto;
+  font-size: 14px;
+  color: #000000de;
+}
+main .container-main h2 {
+  color: #3c4043;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+footer {
+  height: 45px;
+  background-color: #F5F5F5;
+}
+footer .footer-container {
+  width: 50%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer-container .footer-left ul li {
+  display: inline-block;
+  font-size: 11px;
+  margin-right: 10px;
+}
+footer .footer-container .footer-left ul li a {
+  text-decoration: none;
+  color: #3d3d3dcc;
+}
+footer .footer-container .footer-right i {
+  color: #3367d6;
+}
+footer .footer-container .footer-right select {
+  width: 176px;
+  border: 1px solid #000;
 }

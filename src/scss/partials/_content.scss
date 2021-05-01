@@ -1,5 +1,14 @@
 main {
-  .container_main {
-    @include container-center(50%)
+  .container-main {
+    padding-top: 180px;
+    @include container-center(50%);
+    font-size: 14px;
+    color: #000000de;
+    h2 {
+      color: #3c4043;
+      font-size: 24px;
+      font-weight: 500;
+    }
   }
+
 }

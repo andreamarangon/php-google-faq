@@ -45,7 +45,7 @@
             <li>Google LLC, con sede negli Stati Uniti, per il resto del mondo.</li></br>
           </ol>
         <li>La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.</li>
-        </ol>",
+      </ol>",
       "Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.",
       "<h3>Stabilire il paese associato al tuo account</h3>",
       "Quando crei un nuovo Account Google, lo associamo a un paese in base a dove è stato creato. Per quanto riguarda gli account creati almeno un anno fa, usiamo il paese da cui accedi solitamente ai servizi Google, in genere i servizi in cui hai trascorso più tempo nell'ultimo anno.",
@@ -74,14 +74,39 @@
   <title>PHP Google FAQ</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <link rel="stylesheet" href="./dist/css/master.css">
 </head>
 <body>
   <header>
-
+    <!-- nav -->
+    <nav>
+      <!-- nav top -->
+      <div class="nav-top">
+        <div class="nav-top-left">
+          <div class="logo-google">
+            <img src="./dist/img/logogoogle.png" alt="google-logo">
+          </div>
+          <h1>Privacy e termini</h1>
+        </div>
+        <div class="nav-top-right">
+          <i class="fas fa-th"></i>
+          <div class="logo-user"></div>
+        </div>
+      </div>
+      <div class="nav-down">
+        <ul>
+          <li><a href="#">Introduzione</a></li>
+          <li><a href="#">Norme sulla privacy</a></li>
+          <li><a href="#">Termini di servizio</a></li>
+          <li><a href="#">Tecnologie</a></li>
+          <li class="target"><a href="#">Domande frequenti</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main>
-    <div class="container_main">
+    <div class="container-main">
       <?php
       foreach ($faqs as $question => $answers) {
       ?>
@@ -108,7 +133,25 @@
 
   </main>
   <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <ul>
+          <li><a href="">Google</a></li>
+          <li><a href="">Tutto su Google</a></li>
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Termini</a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <i class="fas fa-comment-alt"></i>
+        <select class="" name="">
+          <option value="">Italiano</option>
+          <option value="">English</option>
+          <option value="">Spanish</option>
+        </select>
+      </div>
 
+    </div>
   </footer>
 </body>
 </html>
